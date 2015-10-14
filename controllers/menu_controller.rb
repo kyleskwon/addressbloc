@@ -18,7 +18,6 @@ require_relative '../models/address_book'
      print "Enter your selection: "
 
      selection = gets.to_i
-     puts "You picked #{selection}"
 
      case selection
      when 1
@@ -100,7 +99,7 @@ require_relative '../models/address_book'
       else
         system "clear"
         puts "#{selection} is not a valid input"
-        entries_submenu(entry)
+        entry_submenu(entry)
       end
     end
 
