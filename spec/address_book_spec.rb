@@ -41,7 +41,7 @@ require_relative '../models/address_book'
    end
 
    # Test the binary_search method
-   describe "#binary_search" do
+   context ".binary_search" do
      it "searches AddressBook for a non-existent entry" do
        book.import_from_csv("entries.csv")
        entry = book.binary_search("Dan")
