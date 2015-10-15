@@ -40,7 +40,19 @@ class AddressBook
          lower = mid + 1
        end
      end
-     
+     return nil
+   end
+
+   def iterative_search(name)
+
+     lower = 0
+     upper = entries.length - 1
+     correct_name = entries.name
+     if name == correct_name
+       return entries
+     elsif name < correct_name
+       lower + 1
+     end
      return nil
    end
 
